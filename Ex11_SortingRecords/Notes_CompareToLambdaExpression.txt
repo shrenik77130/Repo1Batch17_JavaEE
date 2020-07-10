@@ -1,0 +1,77 @@
+Functional Programming
+
+	@FunctionalInterface
+	interface TestInterface
+	{
+		public void showTestInterface(int no);
+	}
+
+	a. Create Custom Class
+	b. Anonymous Implementation
+
+Lambda Expression
+
+	TestInterface t = (int no)-> {
+		no=no+10;
+		sout(no);
+	}
+
+	t.showTestInterface();
+
+Map in Functional Interface
+
+CompareTo() to sort Custom Objects
+------------------------------------
+
+	@FunctionalInteraface
+	interface A
+	{
+		void function1();
+	}
+
+	interface B extends A
+	{	
+		default void function1(){
+			
+		}
+	}
+
+
+
+
+	List <Integers> numbers = new ArrayList(
+			Arrays.asList(93,41,512,12,41,51);
+		);
+
+
+	@FunctionalInterface
+	inteface MyComparator
+	{
+		int compareTo(int n1, int n2);
+	}
+
+
+	Collections.sort(numbers,new MyComparator(){
+		@override
+		int compareTo(int n1,int n2)
+		{
+			if(n1>n2) return 1;
+			else if(n1<n2) return -1;
+			else return 0;
+		}
+	});
+
+
+	Collections.sort(numbers,(int n1,int n2)->
+		{
+			if(n1>n2) return 1;
+			else if(n1<n2) return -1;
+			else return 0;
+		}
+	);
+
+
+
+
+
+	
