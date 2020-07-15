@@ -1,0 +1,48 @@
+Method Referening in Java 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+	-> Method References are short hand notations for Lambda Expressions
+	-> The output can be only assigned for functional interface
+	-> :: (Scope Resolution Operator) used before the method name to denote method reference
+	
+		Syntax :(Class or Interface) ::method_name
+
+
+	Types
+	~~~~~~~
+
+	a. Reference to Static Methods :
+		Syntax
+		--------
+		ContainingClass::staticMethodName
+
+		Example
+		------------
+		(s)-> String.valueOf(s)
+
+	b. Reference to instance method of a perticular Object
+		Syntax
+		-------
+		ContainingObject::instanceMethodName
+
+		Example
+		-------------------
+		x::toString
+		
+		()-> "hello".toString()
+
+	c. Reference to an instance method of an arbitary object of a perticular class
+
+
+	d. Reference to Constructor
+
+
+		
+
+
+
+
+
+
+		
