@@ -1,0 +1,22 @@
+java.util.function.Function Interface 
+----------------------------------------
+
+
+	-> The Function Interface is a a part of java.util.function package which has been introduced 
+	   in java8
+
+	-> R apply(T t)
+		R - Return Type of Function
+		T - Type input argument
+
+
+
+java.util.function.BiFunction Interface 
+--------------------------------------------
+
+
+	-> R apply(T t1, U t2)
+
+		R - Return Type of Function
+		T - Type of first input argument
+		U - Type of first second argument
