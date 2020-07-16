@@ -34,6 +34,8 @@ Method Referening in Java 8
 
 	c. Reference to an instance method of an arbitary object of a perticular class
 
+		a. java.util.function.Function
+		b. java.util.function.BiFunction
 
 	d. Reference to Constructor
 
