@@ -2,6 +2,7 @@ package com.shrenik;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 import com.shrenik.example.Person;
@@ -18,8 +19,10 @@ public class MainApp {
 			personRecords.add(new Person("Nayan",41));
 			
 			List ageList = listAgeOfPerson(personRecords,Person::getAge);
+			List personList = OtherlistAgeOfPerson(personRecords,Person::new);
 			
 			System.out.println("Ages = " + ageList);
+			System.out.println("Persons = " + personList);
 	}
 	
 	public static List listAgeOfPerson(List <Person>records, Function <Person,Integer>objTest)
@@ -31,11 +34,11 @@ public class MainApp {
 		return newList;
 	}
 	
-	public static List OtherlistAgeOfPerson(List <Person>records, BiFunction <Person,Integer>objTest)
+	public static List OtherlistAgeOfPerson(List <Person>records, BiFunction <String,Integer,Person>objTest)
 	{
 		List newList = new ArrayList();
 		
-		records.forEach(x->newList.add(objTest.apply(x)));
+		records.forEach(x->newList.add(objTest.apply(x.getPersonname(), x.getAge())));
 		
 		return newList;
 	}	
