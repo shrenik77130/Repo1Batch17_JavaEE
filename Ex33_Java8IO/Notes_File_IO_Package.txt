@@ -1,0 +1,30 @@
+Character Stream
+	Writer/Reader
+Byte Stream
+	InputStream/OutputStream
+
+	Input Operation 
+
+		for string, integers, floats
+		=============================
+		FileInputStream
+
+		for Custom class Objects
+		=============================
+		ObjectInputStream
+
+
+	Output Operation
+		for string, integers, floats
+		=============================
+		FileOutputStream
+
+		for Custom class Objects
+		=============================
+		ObjectOutputStream		
+	
+	
+
+	
+	
+	
